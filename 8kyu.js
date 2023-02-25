@@ -33,3 +33,22 @@ let evenOrOdd = (number) => {
   return number % 2 == 0 ? 'Even' : 'Odd'
 }
 
+// Fun with ES6 Classes #1 - People, people, people
+
+
+class Person {
+  constructor(firstName = 'John',lastName = 'Doe',age = 0,gender = 'Male'){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    
+Person.greetExtraTerrestrials = function(raceName){
+      return `Welcome to Planet Earth ${raceName}`;
+};
+  }
+  sayFullName(){
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+}
