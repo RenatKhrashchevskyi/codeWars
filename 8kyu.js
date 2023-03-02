@@ -52,3 +52,13 @@ Person.greetExtraTerrestrials = function(raceName){
   }
 
 }
+
+// Be Concise IV - Index of an element in an array
+
+let find = (a, e) =>{
+let i = a.indexOf(e);
+if (i != -1) {
+  return i;
+}
+  return 'Not found'
+}
