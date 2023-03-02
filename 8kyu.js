@@ -63,4 +63,14 @@ let find = (a, e) =>{
     return 'Not found'
   }
 
-  
+  // Vowel Count
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = "aeiouAEIOU";
+  for (var i = 0; i < str.length; i++) {
+    if (vowels.indexOf(str[i]) !== -1) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
