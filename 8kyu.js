@@ -53,24 +53,26 @@ Person.greetExtraTerrestrials = function(raceName){
 
 }
 
-// Be Concise IV - Index of an element in an array
+// Make an array of numbers that are doubles of the first array
 
-let find = (a, e) =>{
-  let i = a.indexOf(e);
-  if (i != -1) {
-    return i;
-  }
-    return 'Not found'
-  }
 
-  // Vowel Count
-function getCount(str) {
-  var vowelsCount = 0;
-  var vowels = "aeiouAEIOU";
-  for (var i = 0; i < str.length; i++) {
-    if (vowels.indexOf(str[i]) !== -1) {
-      vowelsCount++;
-    }
-  }
-  return vowelsCount;
+let double = arr => arr.map(i => i * 2)
+console.log(double([2, 3, 5]));
+
+
+// Take an array of numbers and make them strings
+
+function someArr(arr) {
+  return arr.map(i => i.toString())
 }
+console.log(someArr([2, 3 ,5]))
+
+
+// Capitalize each of an array of names
+
+let capitLetter = arr => arr.map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+console.log(capitLetter(['hello', 'jonny']));
+
+
+
+
