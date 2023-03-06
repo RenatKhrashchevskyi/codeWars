@@ -62,8 +62,8 @@ console.log(someArr([2, 3, 5]));
 
 // // // Capitalize each of an array of names
 function capitalizeNames(arr) {
-  //return arr.map(i => i.toUpperCase().charAt(0) + i.toLowerCase())
-  return arr.map((i, ind) => i.charAt(0, 1).toUpperCase() + i.slice(1));
+   return arr.map(i => i.toUpperCase().charAt(0) + i.toLowerCase().slice(1))
+  // return arr.map((i, ind) => i.charAt(0, 1).toUpperCase() + i.slice(1));
 }
 
 console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
@@ -84,3 +84,9 @@ function makeStrings(arr){
 
 console.log(makeStrings([{name: "Angelina Jolie", age: 80}, {name: "Eric Jones", age: 2}]))
 
+
+//Get name initials
+
+let capNames = (str) => str.split(" ").map(word => word[0]).join('');
+
+console.log(capNames("George Raymond Richard Martin"));
