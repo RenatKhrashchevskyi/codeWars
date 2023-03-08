@@ -14,3 +14,12 @@ function fiveAndGreaterOnly(arr) {
   // test
   console.log(evensOnly([3, 6, 8, 2, 9])); /// [6, 8, 2]
 
+
+// 3) Given an array of strings, return a new array that only includes those that are 5 characters or fewer in length
+function fiveCharactersOrFewerOnly(arr) {
+    return arr.filter(i => i.length <= 5)
+  }
+  // test
+  console.log(fiveCharactersOrFewerOnly(["dog", "wolf", "by", "family", "eaten", "camping"])); // ["by", "dog", "wolf", "eaten"]
+
+
