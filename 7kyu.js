@@ -41,4 +41,41 @@ function fiveCharactersOrFewerOnly(arr) {
   //  { name: 'Bob Ziroll', member: true } ]
   
   
-  
+  // 5) Make a filtered list of all the people who are old enough to see The Matrix (older than 18)
+  function ofAge(arr){
+    return arr.filter(i => i.age >= 18)
+  }
+  // test
+  console.log(ofAge([
+      { name: "Angelina Jolie", age: 80 },
+      { name: "Eric Jones", age: 2 },
+      { name: "Paris Hilton", age: 5 },
+      { name: "Kayne West", age: 16 },
+      { name: "Bob Ziroll", age: 100 }
+  ])); 
+  // => 
+  //[ { name: 'Angelina Jolie', age: 80 },
+  //  { name: 'Bob Ziroll', age: 100 } ]
+
+
+// var arr1 = [1, 2, [3, 4]];
+// arr1.flat();
+
+// // В одномерный массив
+// let i = arr1.reduce((acc, val) => acc.concat(val), []);// [1, 2, 3, 4]
+// console.log(i)
+
+
+// Для развёртывания многомерных массивов используем рекурсию, reduce и concat
+const arr = [1, 2, [3, 4, [5, 6, 7]]];
+
+function flatDeep(arr, d = 1) {
+   return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+                : arr.slice();
+};
+
+console.log(flatDeep(arr, Infinity));
+
+
+let j = [1,2,3,4,5].slice(2)
+console.log(j)
