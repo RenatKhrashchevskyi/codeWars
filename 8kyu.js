@@ -104,3 +104,11 @@ const squareSum = numbers => numbers.reduce((num, acc) => (acc * acc) + num, 0)
 let isDivisible = (n, x, y) => ((n % x ===0) && ( n % y === 0)) ? true : false;
 
 
+// Add Length
+function addLength(str) {
+  let arr = str.split(' ')
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = `${arr[i]} ${arr[i].length}`
+  }
+  return arr
+}
