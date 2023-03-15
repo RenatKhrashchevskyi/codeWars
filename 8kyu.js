@@ -90,3 +90,9 @@ console.log(makeStrings([{name: "Angelina Jolie", age: 80}, {name: "Eric Jones",
 let capNames = (str) => str.split(" ").map(word => word[0]).join('');
 
 console.log(capNames("George Raymond Richard Martin"));
+
+
+
+//Square(n) Sum
+
+const squareSum = numbers => numbers.reduce((num, acc) => (acc * acc) + num, 0)
