@@ -96,3 +96,11 @@ console.log(capNames("George Raymond Richard Martin"));
 //Square(n) Sum
 
 const squareSum = numbers => numbers.reduce((num, acc) => (acc * acc) + num, 0)
+
+
+
+// Is n divisible by x and y?
+
+let isDivisible = (n, x, y) => ((n % x ===0) && ( n % y === 0)) ? true : false;
+
+
