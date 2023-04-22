@@ -101,4 +101,6 @@ function century(year) {
     return Math.floor((year-1)/100) + 1;
 }
 
- 
+ // 9. Basic Mathematical Operations
+
+let basicOp = (operation, value1, value2) => eval(value1 + operation + value2);
