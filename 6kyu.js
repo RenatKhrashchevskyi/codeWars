@@ -101,3 +101,19 @@ console.log(voterResults(voters)); // Returned value shown below:
   numOldsPeople: 4 
 }
 */
+
+
+function Man(name, city) {
+    this.name = name;
+    this.city = city;
+    this.children = []
+}
+
+Man.prototype.age = 18;
+
+let alex = new Man('Alex', 'Calgary')
+let bob = new Man('Bob', 'Calgary')
+
+alex.age = 30
+
+console.log(bob.children)

@@ -66,7 +66,7 @@ function fiveCharactersOrFewerOnly(arr) {
 // console.log(i)
 
 
-// Для развёртывания многомерных массивов используем рекурсию, reduce и concat
+// 6)Для развёртывания многомерных массивов используем рекурсию, reduce и concat
 const arr = [1, 2, [3, 4, [5, 6, 7]]];
 
 function flatDeep(arr, d = 1) {
@@ -79,3 +79,19 @@ console.log(flatDeep(arr, Infinity));
 
 let j = [1,2,3,4,5].slice(2)
 console.log(j)
+
+
+// 7)Sum of Minimums!
+
+
+function sumOfMinimums(arr) {
+  const newArr = arr.map((el) => el.sort((a,b) => a-b))
+ return newArr.reduce((a,b) => a + b[0], 0)
+}
+
+console.log(sumOfMinimums([ 
+  [ 2, 5, 3, 1, 5 ], 
+  [ 10, 6, 7, 5, 9 ], 
+  [ 25, 20, 34, 100 ]
+]));
+ 
