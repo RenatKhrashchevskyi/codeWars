@@ -95,3 +95,10 @@ console.log(sumOfMinimums([
   [ 25, 20, 34, 100 ]
 ]));
  
+// 8. Century From Year
+
+function century(year) {
+    return Math.floor((year-1)/100) + 1;
+}
+
+ 
