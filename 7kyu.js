@@ -114,3 +114,8 @@ function solution(str, ending){
   }
  return ending.includes(n)
 }
+
+
+// 11. Reversed Words
+
+let reverseWords = (str) => str.split(' ').reverse().join(' '); 
