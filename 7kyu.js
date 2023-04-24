@@ -104,3 +104,13 @@ function century(year) {
  // 9. Basic Mathematical Operations
 
 let basicOp = (operation, value1, value2) => eval(value1 + operation + value2);
+
+// 10. String ends with?
+
+function solution(str, ending){
+ let n = str.slice(str.length - ending.length);
+  if (str.length < ending.length) {
+    return false;
+  }
+ return ending.includes(n)
+}
