@@ -119,3 +119,9 @@ function solution(str, ending){
 // 11. Reversed Words
 
 let reverseWords = (str) => str.split(' ').reverse().join(' '); 
+
+// 12. Price of Mangoes
+function mango(quantity, price){
+  return price * (quantity - Math.floor(quantity / 3));
+}
+
