@@ -141,3 +141,8 @@ let vowels = ["a", "e", "i", "o", "u"]
          return count
     
 }
+
+
+// 1. Determine offspring sex based on genes XX and XY chromosomes
+
+let chromosomeCheck = sperm => (sperm === 'XX') ?  "Congratulations! You're going to have a daughter." : "Congratulations! You're going to have a son."
