@@ -120,8 +120,38 @@ function solution(str, ending){
 
 let reverseWords = (str) => str.split(' ').reverse().join(' '); 
 
+
 // 12. Price of Mangoes
 function mango(quantity, price){
   return price * (quantity - Math.floor(quantity / 3));
 }
 
+
+// 13. Vowel Count
+
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = "aeiouAEIOU";
+  for (var i = 0; i < str.length; i++) {
+    if (vowels.indexOf(str[i]) !== -1) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
+
+// or
+function getCount(str) {
+    let count = 0;
+let vowels = ["a", "e", "i", "o", "u"]
+    for (let letter of str) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+      
+    }
+
+         return count
+    
+}
+    
