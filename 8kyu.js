@@ -157,3 +157,9 @@ if (i != -1) {
 }
   return 'Not found'
 }
+
+
+// 3. Find out whether the shape is a cube
+
+const cubeChecker = (volume, side) => 
+(side * side * side === volume && side !=0 && volume > 0) ? true : false
