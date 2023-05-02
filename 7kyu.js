@@ -154,4 +154,24 @@ let vowels = ["a", "e", "i", "o", "u"]
          return count
     
 }
+
+
+// 14. Counting sheep...
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(i => i++).length;
+}
+
+// or
+
+function countSheeps(arrayOfSheep) {
+  let sum = 0;
+ for (i = 0; i < arrayOfSheep.length; i++) {
+   if (arrayOfSheep[i] === true) {
+     sum ++
+   }
+  
+ }
+ return sum
+}
     
